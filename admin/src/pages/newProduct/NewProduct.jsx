@@ -58,6 +58,12 @@ export default function NewProduct() {
             break;
           default:
         }
+        if (progress === 100) {
+          console.log("done");
+          setTimeout(() => {
+            window.location.reload();
+          }, 1000);
+        }
       },
       (error) => {
         console.log(error);
@@ -72,10 +78,6 @@ export default function NewProduct() {
         });
       }
     );
-
-    setTimeout(() => {
-      window.location.reload();
-    }, 5000);
   };
 
   return (

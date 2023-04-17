@@ -52,6 +52,7 @@ router.post("/login", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 //LOGOUT
 router.get("/logout", async (req, res) => {
   try {

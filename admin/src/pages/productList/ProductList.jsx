@@ -69,6 +69,7 @@ export default function ProductList() {
         pageSize={8}
         checkboxSelection
       />
+      ;
     </div>
   );
 }

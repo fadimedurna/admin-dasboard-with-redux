@@ -12,6 +12,20 @@ function Login() {
   const admin = currentUser?.isAdmin;
   const token = currentUser?.accessToken;
 
+  useEffect(() => {
+    if (token && admin) {
+      navigate("/", { replace: true });
+      setTimeout(() => {
+        window.location.reload(true);
+      }, 10);
+    } else if (admin === false) {
+      alert("You are not an admin");
+      navigate("/login");
+    } else {
+      navigate("/login");
+    }
+  }, [token, admin, navigate]);
+
   function handleClick(e) {
     try {
       e.preventDefault();
@@ -25,20 +39,6 @@ function Login() {
       alert("Please fill in all fields");
     }
   }
-
-  useEffect(() => {
-    if (token && admin) {
-      setTimeout(() => {
-        window.location.reload(true);
-      }, 10);
-      navigate("/", { replace: true });
-    } else if (admin === false) {
-      alert("You are not an admin");
-      navigate("/login");
-    } else {
-      navigate("/login");
-    }
-  }, [token, admin, navigate]);
 
   return (
     <div
