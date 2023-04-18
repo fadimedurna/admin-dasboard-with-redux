@@ -1,5 +1,6 @@
 import "./featuredInfo.css";
-import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
+import ArrowUpward from "@mui/icons-material/ArrowUpward";
+import ArrowDownward from "@mui/icons-material/ArrowDownward";
 import { useEffect, useState } from "react";
 import { userRequest } from "../../requestMethods";
 
