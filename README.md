@@ -22,6 +22,7 @@
 ### For Backend
 
 MongoDB used for creating database.
+
 Stripe for payment service provider.
 
 - express
@@ -36,9 +37,13 @@ Stripe for payment service provider.
 ## Admin Dashboard Usage
 
 - In order to login to the admin page, "isAdmin = true" must be met. If it is "false", the login is not allowed.
-To be able to login:
+
+To be able to login please enter:
+
 Email: admin@abc.com
+
 password: admin
+
 - It is displayed by calculating the current month's cost and the percentage increase or decrease compared to the previous month in the Revenue section on the home page.
 - The newly created user distribution according to the months is seen in the chart.
 - New Join Members and Latest transactions sections are also available on the home page.
