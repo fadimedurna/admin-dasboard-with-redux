@@ -22,6 +22,7 @@
 ### For Backend
 
 MongoDB used for creating database.
+
 Stripe for payment service provider.
 
 - express
@@ -40,6 +41,7 @@ Stripe for payment service provider.
 To be able to login please enter:
 
 Email: admin@abc.com
+
 password: admin
 
 - It is displayed by calculating the current month's cost and the percentage increase or decrease compared to the previous month in the Revenue section on the home page.
