@@ -33,7 +33,7 @@ export default function Topbar() {
     <div className='topbar'>
       <div className='topbarWrapper'>
         <div className='topLeft'>
-          <span className='logo'>lamaadmin</span>
+          <span className='logo'>thunderbolt admin</span>
         </div>
         <div className='topRight'>
           {user && (
