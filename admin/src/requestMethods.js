@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8080/api/";
+const BASE_URL = "https://admin-dasboard-with-redux-api.onrender.com/api/";
 
 const getToken = () => {
   const user = JSON.parse(window.localStorage.getItem("persist:root"))?.user;
