@@ -32,3 +32,6 @@ Stripe for payment service provider.
 - jsonwebtoken
 - stripe
 - cors
+
+Backend deployed by render and frontend deployed by netlify. Link of the admin dashboard : 
+[Thunderbolt Admin Dashboard](https://thunderbolt-admin.netlify.app)
