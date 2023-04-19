@@ -9,6 +9,7 @@ import {
 import app from "../../firbase";
 import { addProduct } from "../../redux/apiCalls";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 export default function NewProduct() {
   const [inputs, setInputs] = useState({
@@ -21,6 +22,7 @@ export default function NewProduct() {
   const [file, setFile] = useState(null);
   const [cat, setCat] = useState([]);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -72,9 +74,8 @@ export default function NewProduct() {
         });
       }
     );
-    setTimeout(() => {
-      window.location.replace("/products");
-    }, 3000);
+
+    navigate("/products");
   };
 
   return (
