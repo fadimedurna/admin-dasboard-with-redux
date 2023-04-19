@@ -40,7 +40,7 @@ Stripe for payment service provider.
 
 To be able to login please enter:
 
-Email: admin@abc.com
+email: admin@abc.com
 
 password: admin
 
