@@ -31,7 +31,7 @@ function App() {
         <Route element={<AppLayout admin={admin} />}>
           <Route
             path='/'
-            element={admin ? <Home /> : <Navigate to='/login' />}
+            element={currentUser && admin ? <Home /> : <Navigate to='/login' />}
           />
           <Route path='/users' element={<UserList />} />
           <Route path='/user/:userId' element={<User />} />
