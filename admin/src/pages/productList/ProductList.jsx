@@ -16,6 +16,7 @@ export default function ProductList() {
 
   const handleDelete = (id) => {
     deleteProduct(id, dispatch);
+    console.log("deleted product", id);
   };
 
   const columns = [
