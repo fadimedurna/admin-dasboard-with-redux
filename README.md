@@ -55,3 +55,5 @@ password: admin
 Backend deployed by render and frontend deployed by netlify. 
 Finally, link of the admin dashboard is: 
 [Thunderbolt Admin Dashboard](https://thunderbolt-admin.netlify.app)
+
+Note: Since the API works through render, the products open a bit slow. Thank you for your patience.
